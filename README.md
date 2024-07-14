@@ -46,15 +46,19 @@ Lembrando que é um buffer circular e precisa "encher" o vetor para calcular a m
 
 O buffer inicia com valores zeros em todos as suas posições. Quando recebe um valor maior que seu tamanho, começa a sobrepor os valores mais antigos. A tabela exemplifica:
 
-| Posição       | 0  | 1 | 2 | 3 | 4 | Média |
-|---------------|----|---|---|---|---|-------|
-| Valor inicial | 0  | 0 | 0 | 0 | 0 | 0.00  |
-| Recebe 10     | 10 | 0 | 0 | 0 | 0 | 2.00  |
-| Recebe 8      | 10 | 8 | 0 | 0 | 0 | 3.60  |
-| Recebe 3      | 10 | 8 | 3 | 0 | 0 | 4.20  |
-| Recebe 8      | 10 | 8 | 3 | 8 | 0 | 5.80  |
-| Recebe 2      | 10 | 8 | 3 | 8 | 2 | 6.20  |
-| Recebe 7      | 7  | 8 | 3 | 8 | 2 | 5.60  |
+<div align="center">
+
+| Posição       | 0  | 1  | 2  | 3  | 4  | Média|
+|---------------|:--:|:--:|:--:|:--:|:--:|:--:  |
+| Valor inicial | 0  | 0  | 0  | 0  | 0  | 0.00 |
+| Recebe 10     | 10 | 0  | 0  | 0  | 0  | 2.00 |
+| Recebe 8      | 10 | 8  | 0  | 0  | 0  | 3.60 |
+| Recebe 3      | 10 | 8  | 3  | 0  | 0  | 4.20 |
+| Recebe 8      | 10 | 8  | 3  | 8  | 0  | 5.80 |
+| Recebe 2      | 10 | 8  | 3  | 8  | 2  | 6.20 |
+| Recebe 7      | 7  | 8  | 3  | 8  | 2  | 5.60 |
+
+</div>
 
 
 
